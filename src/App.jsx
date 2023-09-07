@@ -6,7 +6,7 @@ import {  ChatDotsFill, CloudDownload, Download,  EyeFill, HeartFill} from "reac
 
 
 const App = () => {
-  const [search, setSearch] = useState("flower");
+  const [search, setSearch] = useState("");
   const [datas, setDatas] = useState([]);
   const key = "39292880-cd12cdae9273166e5ae55a003";
   useEffect(() => {
