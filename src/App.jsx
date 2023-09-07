@@ -57,8 +57,8 @@ const App = () => {
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] ">           
-                {item.tags}
+              <p className="text-center text-sm text-[#555555] p-1 ">           
+                {item.tags.split("  ", 3)}
               </p>
 
               <a
