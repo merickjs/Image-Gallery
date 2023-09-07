@@ -57,14 +57,13 @@ const App = () => {
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] pt-3">
-                {" "}
+              <p className="text-center text-sm text-[#555555] pt-3">           
                 {item.tags}
               </p>
 
               <a
                 className="text-lg pt-5 self-center"
-                href={item.webformatURL}
+                href={item.largeImageURL}
                 target="blank"
               >
                 <CloudDownload />
