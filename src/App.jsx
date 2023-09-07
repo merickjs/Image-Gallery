@@ -34,26 +34,26 @@ const App = () => {
       )}
       <section className="grid md:grid-cols-5 grid-cols-1 place-items-center gap-4 mt-20 mb-5">
         {datas.map((item, i) => (
-          <Card key={i} className={"w-72 border-2 border-[#555555 "}>
+          <Card key={i} className={"w-72 border-2 border-[#555555"}>
             <div>
               <img className="w-72 h-52" src={item.webformatURL} alt="" />
             </div>
             <div className="flex flex-col p-4">
               <ul className="flex flex-col gap-y-1">
                 <li className="flex items-center gap-x-2">
-                  <EyeFill className="text-rose-600" />{" "}
+                  <EyeFill className="text-rose-600" />
                   <span className="text-[#555555]">{item.views}</span>
                 </li>
                 <li className="flex items-center gap-x-2">
-                  <ChatDotsFill className="text-rose-600" />{" "}
+                  <ChatDotsFill className="text-rose-600" />
                   <span className="text-[#555555]">{item.comments}</span>
                 </li>
                 <li className="flex items-center gap-x-2">
-                  <HeartFill className="text-rose-600" />{" "}
+                  <HeartFill className="text-rose-600" />
                   <span className="text-[#555555]">{item.likes}</span>
                 </li>
                 <li className="flex items-center gap-x-2">
-                  <Download className="text-rose-600" />{" "}
+                  <Download className="text-rose-600" />
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
