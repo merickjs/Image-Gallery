@@ -1,6 +1,6 @@
 const Header = ({ setSearch }) => {
   return (
-    <header>
+    <header className="mt-20">
       <form className="flex flex-col justify-center items-center">
         <h1 className="text-md text-[#555555]">Search Images..</h1>
         <input
