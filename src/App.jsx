@@ -6,8 +6,8 @@ import {  ChatDotsFill, CloudDownload, Download,  EyeFill, HeartFill} from "reac
 
 
 const App = () => {
-  const [datas, setDatas] = useState([]);
   const [search, setSearch] = useState("");
+  const [datas, setDatas] = useState([]);
   const key = "39292880-cd12cdae9273166e5ae55a003";
   useEffect(() => {
     try {
@@ -34,12 +34,12 @@ const App = () => {
       )}
       <section className="grid md:grid-cols-5 grid-cols-1 place-items-center gap-4 mt-20 mb-5">
         {datas.map((item, i) => (
-          <Card key={i} className={"w-72 border-2 border-[#555555"}>
+          <Card key={i} className={"w-72 border-2"}>
             <div>
               <img className="w-72 h-52" src={item.webformatURL} alt="" />
             </div>
-            <div className="flex flex-col p-4">
-              <ul className="flex flex-col gap-y-1">
+            <div className="flex flex-col ">
+              <ul className="flex flex-col gap-y-1 p-3">
                 <li className="flex items-center gap-x-2">
                   <EyeFill className="text-rose-600" />
                   <span className="text-[#555555]">{item.views}</span>
@@ -57,12 +57,12 @@ const App = () => {
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] pt-3">           
+              <p className="text-center text-sm text-[#555555] p-2">           
                 {item.tags}
               </p>
 
               <a
-                className="text-lg pt-5 self-center"
+                className="text-lg my-3 self-center"
                 href={item.largeImageURL}
                 target="blank"
               >
