@@ -23,7 +23,7 @@ const App = () => {
       console.log(error);
     }
   }, [search]);
-
+console.log(datas);
   return (
     <>
       <Header setSearch={setSearch} />
@@ -57,8 +57,8 @@ const App = () => {
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] p-1 ">           
-                {item.tags.split("  ", 3)}
+              <p className="text-center text-sm text-[#555555] p-1">           
+                {item.tags.split(`${item.tags.split(" ", 1)}`)} 
               </p>
 
               <a
