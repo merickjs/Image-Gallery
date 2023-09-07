@@ -57,7 +57,7 @@ const App = () => {
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] p-2">           
+              <p className="text-center text-sm text-[#555555] ">           
                 {item.tags}
               </p>
 
