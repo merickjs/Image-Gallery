@@ -23,7 +23,6 @@ const App = () => {
       console.log(error);
     }
   }, [search]);
-console.log(datas);
   return (
     <>
       <Header setSearch={setSearch} />
