@@ -10,8 +10,8 @@ import { ChatDotsFill, CloudDownload, Download, EyeFill, HeartFill } from "react
 const App = () => {
   const [search, setSearch] = useState("");
   const [datas, setDatas] = useState([]);
+  const key = import.meta.env.VITE_SOME_KEY
   useEffect(() => {
-    const key = import.meta.env.VITE_SOME_KEY
     try {
       const getData = async () => {
         const response = await axios.get(
