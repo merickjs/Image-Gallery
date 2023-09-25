@@ -2,14 +2,16 @@ import Header from "./components/Header";
 import Card from "./components/Card";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {  ChatDotsFill, CloudDownload, Download,  EyeFill, HeartFill} from "react-bootstrap-icons";
+import { ChatDotsFill, CloudDownload, Download, EyeFill, HeartFill } from "react-bootstrap-icons";
+
+
 
 
 const App = () => {
   const [search, setSearch] = useState("");
   const [datas, setDatas] = useState([]);
-  const key = "39292880-cd12cdae9273166e5ae55a003";
   useEffect(() => {
+    const key = import.meta.env.VITE_SOME_KEY
     try {
       const getData = async () => {
         const response = await axios.get(
@@ -23,7 +25,6 @@ const App = () => {
       console.log(error);
     }
   }, [search]);
-console.log(datas);
   return (
     <>
       <Header setSearch={setSearch} />
@@ -57,8 +58,8 @@ console.log(datas);
                   <span className="text-[#555555]">{item.downloads}</span>
                 </li>
               </ul>
-              <p className="text-center text-sm text-[#555555] p-1">           
-                {item.tags.split(`${item.tags.split(" ", 1)}`)} 
+              <p className="text-center text-sm text-[#555555] p-1">
+                {item.tags.split(`${item.tags.split(" ", 1)}`)}
               </p>
 
               <a
